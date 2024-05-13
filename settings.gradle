@@ -1,0 +1,5 @@
+rootProject.name = 'Electronic-equipment-regeneration-system'
+include 'quoting-services'
+include 'assessment-services'
+include 'models'
+
