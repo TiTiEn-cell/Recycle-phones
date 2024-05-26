@@ -1,9 +1,10 @@
 rootProject.name = 'Electronic-equipment-regeneration-system'
-include 'quoting-services'
-include 'assessment-services'
 include 'models'
 include 'receiving-service'
 include 'accounting-service'
 include 'recycling-service'
-include 'itemStatus-service'
+include 'reporting-service'
+include 'assessment-service'
+include 'item-status-service'
+include 'quoting-service'
 
