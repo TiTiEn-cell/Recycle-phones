@@ -19,17 +19,23 @@ public class Customer {
     private String name;
     private String email;
     private String phone;
+    private String pass;
     private String address;
 
     //Constructor
-    public Customer(String name, String email, String phone, String address) {
+
+
+    public Customer(String name, String email, String phone, String pass, String address) {
         this.name = name;
         this.email = email;
         this.phone = phone;
+        this.pass = pass;
         this.address = address;
     }
 
     //Getter
+
+
     public long getId() {
         return id;
     }
@@ -46,11 +52,17 @@ public class Customer {
         return phone;
     }
 
+    public String getPass() {
+        return pass;
+    }
+
     public String getAddress() {
         return address;
     }
 
     //Setter
+
+
     public void setId(long id) {
         this.id = id;
     }
@@ -67,9 +79,11 @@ public class Customer {
         this.phone = phone;
     }
 
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+
     public void setAddress(String address) {
         this.address = address;
     }
-
-
 }

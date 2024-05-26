@@ -60,3 +60,16 @@ button {
     margin-top: 20px;
     width: 100%;
 }
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link p {
+    color: #2d592d;
+}
+
+.signup-link a {
+    color: #2d592d;
+    text-decoration: none;
+    font-weight: bold;
+}

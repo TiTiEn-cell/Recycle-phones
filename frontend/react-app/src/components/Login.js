@@ -1,6 +1,8 @@
 import React from 'react';
-import './Login.css'; // Tạo file CSS để style
-import loginImage from '../assets/images/login.png'; // Đảm bảo đường dẫn tới hình ảnh đúng
+import './Login.css';
+import loginImage from '../assets/images/login.png';
+import logoImage from '../assets/images/logo.png'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -10,7 +12,7 @@ const Login = () => {
             </div>
             <div className="login-form">
                 <div className="logo">
-                    <img src="https://example.com/logo.png" alt="Logo" /> {/* Thay bằng đường dẫn tới logo của bạn */}
+                    <img src={logoImage} alt="Logo" />
                 </div>
                 <h2>Đăng nhập hệ thống</h2>
                 <form>
@@ -22,6 +24,9 @@ const Login = () => {
                     </div>
                     <button type="submit">Đăng nhập</button>
                 </form>
+                <div className="signup-link">
+                    <p>Chưa có tài khoản? <Link to="/signup">Đăng ký</Link></p>
+                </div>
             </div>
         </div>
     );
